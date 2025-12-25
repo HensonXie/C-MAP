@@ -6,6 +6,8 @@
 
 </div>
 
+---
+
 ### Introduction
 
 This project focuses on **Multimodal Conversational Analysis**, specifically targeting **Affect Recognition**, **Personality Recognition**, and **Affect Prediction** in multi-turn dialogues. It introduces a novel multimodal dataset and establishes baseline model.
