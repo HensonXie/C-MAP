@@ -1,8 +1,12 @@
-<a name="chinese"></a>
+<div align="center">
 
 # C-MAP
-[English](#english) | [中文](#chinese)
 
+[**中文**](./README_zh.md) | [**English**](./README.md)
+
+</div>
+
+---
 
 
 
