@@ -1,7 +1,9 @@
+<a name="chinese"></a>
+
 # C-MAP
 [English](#english) | [中文](#chinese)
 
-<a name="chinese"></a>
+
 
 
 ### 项目介绍
