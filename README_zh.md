@@ -1,12 +1,12 @@
-
+# C-MAP
+[English](#english) | [中文](#chinese)
 
 <a name="chinese"></a>
 
-## 🇨🇳 中文版本
 
 ### 项目介绍
 
-本项目致力于**多模态对话分析**，重点关注**情感识别**、**人格识别**以及**情感预测（Affect Prediction）**任务。项目包含一个全新的中文多模态数据集，并提供了基于不同融合策略（直接融合、Transformer融合）的基线模型代码。
+本项目致力于**多模态对话分析**，重点关注**情感识别**、**人格识别**以及**情感预测**任务。项目包含一个全新的中文多模态数据集，并提供了基线模型代码。
 
 ### 🛠️ 环境安装
 
@@ -22,7 +22,6 @@ pip install -r requirements.txt
 
 ### 📂 目录结构说明
 
-为了方便阅读，以下路径已简化为相对路径：
 
 * **数据目录 (`./data`)**
 * `raw/`: 原始视频/音频数据存放位置
@@ -39,8 +38,7 @@ pip install -r requirements.txt
 
 * **模型目录 (`./model`)**
 * `main.py`: **[单轮]** 单轮对话任务主程序
-* `fusion_model.py`: **[多轮]** 策略2（Transformer）训练脚本
-* `fusion_models.py`: **[多轮]** 策略2 模型架构定义
+* `dialogue_train_from_cls`: **[多轮]** 单轮对话任务主程序
 
 
 
@@ -84,9 +82,6 @@ python ./model/main.py
 
 **任务 B：多轮对话情感预测**
 
-本任务提供了两种融合策略：
-
-* **策略 1：直接融合 (Direct Fusion)**
 1. 提取上轮对话特征：
 ```bash
 python ./model/dialogue_feature_extractor.py
@@ -94,26 +89,8 @@ python ./model/dialogue_feature_extractor.py
 ```
 
 
-2. 提取上轮多维特征（情感+人格）：
-```bash
-python ./model/dialogue_feature_extractor_multi.py
-
-```
-
-
-3. 使用 Concat 方式融合并训练：
+2. 使用 Concat 方式融合并训练：
 ```bash
 python ./model/dialogue_train_from_cls.py
 
 ```
-
-
-
-
-* **策略 2：Transformer 融合**
-使用更复杂的 Transformer 结构进行特征融合与预测：
-```bash
-python ./model/fusion_model.py
-
-```
-
