@@ -7,7 +7,7 @@
 
 ### Introduction
 
-This project focuses on **Multimodal Conversational Analysis**, specifically targeting **Affect Recognition**, **Personality Recognition**, and **Affect Prediction** in multi-turn dialogues. It introduces a novel multimodal dataset and establishes baseline models using diverse fusion strategies (e.g., Direct Fusion, Transformer-based Fusion).
+This project focuses on **Multimodal Conversational Analysis**, specifically targeting **Affect Recognition**, **Personality Recognition**, and **Affect Prediction** in multi-turn dialogues. It introduces a novel multimodal dataset and establishes baseline model.
 
 ### 🛠️ Environment Requirements
 
@@ -99,15 +99,11 @@ python ./model/main.py
 ```
 
 **B. Multi-turn Dialogue (Affect Prediction)**
-
-* **Strategy 1: Direct Fusion**
 Extract features from the previous turn (Context):
+
 ```bash
 # Standard feature selection
 python ./model/dialogue_feature_extractor.py
-
-# Multi-feature selection (Affect + Personality)
-python ./model/dialogue_feature_extractor_multi.py
 
 ```
 
@@ -117,14 +113,4 @@ Train using direct concatenation fusion:
 python ./model/dialogue_train_from_cls.py
 
 ```
-
-
-* **Strategy 2: Transformer Fusion**
-Train using complex Transformer-based fusion models:
-```bash
-python ./model/fusion_model.py
-
-```
-
-
 
