@@ -56,10 +56,9 @@ tqdm==4.67.1
 ├── preprocessing/               # Feature Extraction & Data Processing
 │   ├── feature_extract/         # Feature extraction scripts
 │   ├── detection_multimodal.py  # Transcription & Data splitting
-│   └── test.py                  # Data integrity check
+│   └── check.py                  # Data integrity check
 └── model/                       # Model Training & Inference
     ├── main.py                  # Single-turn dialogue tasks
-    ├── fusion_models.py         # Model definitions (Strategy 2)
     └── ...                      # Multi-turn strategies scripts
 
 ```
